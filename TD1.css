@@ -1,3 +1,23 @@
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+@media all and (max-width: 320px)
+{
+    body
+    {
+        display: block;
+        width: auto;
+    }
+    .p1{
+        margin-left: -200px;
+        font-size:8px;
+    }
+
+}
+
 body{
     background-image: url("TD1.png");
 }
@@ -78,17 +98,23 @@ hr{
   }
 
             /* Code du deuxième bloque au milieu en bas */
-.p6{
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v51/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}    
+.material-icons{
+    font-family: 'Material Icons';
     color: rgb(101, 174, 136);
     padding-left: 670px;
-    margin-top: -135px ;
-    font-size: 45px;
-    font-family: 'arial';
-    font-weight: bolder; 
+    margin-top: -125px ;
+    font-size: 30px;
     
 }
   .p7{
-    margin-top: -40px;
+    margin-top: -10px;
     color: white;
     margin-left: 600px;
     font-size: 20px;
@@ -128,25 +154,24 @@ a{
 }
 
 .vertical-line2{
-    margin-top: -1500px;
+    margin-top: -1600px;
     border-left: 2px solid gray;
     display: inline-block;
     height: 110px;
     margin-left: 880px;
-    margin-bottom: 125px ;
+    margin-bottom: 135px ;
   }
 
             /* Code du toisième bloque à droite en bas */
-.p9{
+.fa{
     color: rgb(101, 174, 136);
-    padding-left: 1050px;
-    margin-top: -245px ;
-    font-size: 45px;
-    font-family: 'arial';
-    font-weight: bolder;
+    position: absolute;
+    left: 1050px;
+    top: 365px;
 }
+
   .p10{
-    margin-top: -45px;
+    margin-top: -195px;
     color: white;
     margin-left: 1000px;
     font-size: 20px;
